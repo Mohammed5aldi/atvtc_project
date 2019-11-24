@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+       <!DOCTYPE html>
+       <html lang="en">
+
+       <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <meta http-equiv="X-UA-Compatible" content="ie=edge">
+              <title>Table</title>
+       </head>
+
+       <body>
+
+
+              <style>
+                     table {
+                            border-collapse: collapse;
+                     }
+
+                     td {
+                            border: 1px solid #333;
+                            padding: 5px;
+                     }
+
+                     body {
+                            color: white;
+                            background: black;
+                     }
+              </style>
+
+
+              <!-- {% if messages %}
+        <div class="msgs">
+            {% for i in messages %}
+            <p>{{i}}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+    
+       -->
+
+
+
+
+              <br> <br><br> <br>
+              <center>
+
+
+
+                     {% for i in tables %}
+                     <table border="1">
+
+                            <tr></tr>
+
+
+                            <center>القسم : الحاسب وتقنية المعلومات </center>
+                            <img src="{% static 'dr.jpg' % }" alt="">
+                            <br><br>
+
+                            <div align="center"> .... اهلا بك :
+                                   <div class="box">
+                                          <p> {{i.name}} </p>
+
+                                   </div>
+
+                                   نتمنى لك يوماً سعيداً
+
+                            </div>
+                            <br>
+
+
+
+
+
+                            </tr>
+
+
+                            <tr dir="rtl">
+
+                                   <td>مكان القاعة </td>
+                                   <td> اسم المقرر</td>
+
+                                   <td>المقرر </td>
+                                   <td>نوع المقرر </td>
+                                   <td> رقم الشعبة</td>
+                                   <td>الوقت </td>
+                                   <td>اليوم </td>
+                            </tr>
+
+                            <tr dir="rtl">
+
+                                   <td>1041520003 </td>
+
+                                   <td>{{i.ter1}} </td>
+                                   <td>برمج 492 </td>
+
+                                   <td>نظري صباحي </td>
+
+                                   <td> 40443</td>
+
+                                   <td> 0910 - 0730 </td>
+                                   <td>الاحد </td>
+
+
+                            </tr>
+
+
+                            <tr dir="rtl">
+
+                                   <td>1041520003 </td>
+
+                                   <td>{{i.ter2}} </td>
+                                   <td>برمج461 </td>
+
+                                   <td>نظري صباحي </td>
+
+                                   <td> 57495</td>
+
+                                   <td> 1100 - 12:50 </td>
+                                   <td>الاحد </td>
+
+
+                            </tr>
+                            <tr dir="rtl">
+
+                                   <td>1041520005 </td>
+
+                                   <td>
+                                          <p>{{i.ter3}}</p>
+                                   </td>
+                                   <td>برمج481 </td>
+
+                                   <td>عملي صباحي </td>
+
+                                   <td> 30395</td>
+
+                                   <td>1100 - 0910 </td>
+                                   <td>الاثنين </td>
+
+
+
+
+
+                            </tr>
+                            <tr dir="rtl">
+
+                                   <td>1041520005 </td>
+
+                                   <td>{{i.ter4}} </td>
+                                   <td>برمج481</td>
+
+                                   <td>عملي صباحي </td>
+
+                                   <td> 30395</td>
+
+                                   <td>0920 - 1100 </td>
+                                   <td>الثلاثاء </td>
+
+                            </tr>
+
+                            <tr dir="rtl">
+
+                                   <td>1041520007 </td>
+
+                                   <td>{{i.ter5}} </td>
+                                   <td>برمج492 </td>
+
+                                   <td>عملي صباحي </td>
+
+                                   <td> 57495</td>
+
+                                   <td>1050 - 0730 </td>
+                                   <td>الاربعاء </td>
+
+
+
+                            </tr>
+                            <tr dir="rtl">
+
+
+                                   <td>1041520003 </td>
+
+                                   <td>{{i.ter6}} </td>
+                                   <td>برمج461 </td>
+
+                                   <td>عملي صباحي </td>
+
+                                   <td> 40443</td>
+
+                                   <td>0100 - 0240 </td>
+                                   <td>الاربعاء </td>
+
+                            </tr>
+
+
+                     </table>
+                     {% endfor %}
+                     <br><br><br><br>
+                     &copy; All rights reserved - Technical and vocational training corporation 2019 ( TVTC )
+                     </div>
+
+       </body>
+
+       </html>
+
+
+      
+</body>
+
+</html>
